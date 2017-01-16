@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-    <div class="landingpage">
-        <div class="intro"> Hi, I'm </div>  
-        <div class="name"><p class="animatename">June Xu</p></div>
+    <div class="landingpage mdl-grid">
+        <div class="intro mdl-cell mdl-cell--stretch mdl-cell--12-col"> Hi, I'm </div>  
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--12-col"><p class="animatename name">June Xu</p></div>
         <div class="landingicons"> 
             <a href="#aboutme"><i style="padding-left: 20px; color: black;"class="fa fa-calendar fa-3x" aria-hidden="true"></i></a>
             <a href="#education"><i style="padding-left: 20px;color: black;" class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i></a>
             <a href="#projects"><i style="padding-left: 20px;color: black;"class="fa fa-product-hunt fa-3x" aria-hidden="true"></i></a>
             <a href="#contact"><i style="padding-left: 20px;color: black;"class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a></div>
-            <a href="#aboutme"> <div class="arrow"> <img src="arrow.jpg" id="arrow"> </div> </a>
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--12-col"> <a style="justify-content: center; display: flex;"href="#aboutme"> <img src="arrow.jpg" id="arrow">  </a> </div>
     </div>
     <div class="sectOneHalf mdl-grid" id="aboutme">
         <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col">
@@ -49,50 +49,37 @@
         <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col"> 
             <p style="color: white;"class="headingswhite"> WORKS</p> 
         </div>
-<div class="mdl-cell mdl-cell--stretch mdl-cell--12-col"> 
-<div style="overflow-x:auto"> 
-<table class="table"> 
-  <tr>
-        <td class="project"> 
-        <table class="projectinfo" style="height: 80%;">
-        <tr> <th class="tableheadings" style="padding-top: 10%;"> Pubble</th> </tr>
-        <tr> <th class="tableheadings" style="color: grey;"> Javascript  </th> </tr>
-        <tr> <th><img style="padding-top: 10px; padding-bottom: 10px; width: 200px; height:150px;"src="code.jpg"> </th></tr>
-        <tr> <td style="height: 50%;"> An app on the Pebble smartwatch that allows users to find the price of meals in restaurants near their current location.  </td></tr> 
-        <td> <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;" class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p>  </td> 
-        </table>
-        </td>
-    <td class="project">
-    <table class="projectinfo" style="height:80%">
-            <tr> <th class="tableheadings" style="padding-top: 10%;"> Bliss </th> </tr>
-            <tr> <th class="tableheadings" style="color: grey;"> Java, Android Studio </th> </tr>
-            <tr> <th><img style="padding-top: 10px; padding-bottom: 10px; width: 200px; height:150px;"src="technovation.png"> </th></tr>
-            <tr> <td style="height: 50%;"> An app with interactive screens including a countdown, timer, and splash screen that allows users to de-stress. </td> </tr>
-            <td> <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;" class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p> </td>
-    </table>
-      </td>
-    <td class="project"> 
-    <table class="projectinfo" style="height:80%">
-            <tr> <th class="tableheadings" style="padding-top: 10%;"> Hangman </th> </tr>
-            <tr> <th class="tableheadings" style="color: grey;"> Python, Pycharm </th> </tr>
-            <tr> <th><img style="padding-top: 10px; padding-bottom: 10px; width: 200px; height:150px;"src="hangman2.png"> </th></tr>
-            <tr> <td style="height: 50%;"> A text-based game that simulates the regular game Hangman but with two separate modes: Normal and Unlimited. </td> </tr>
-            <td> <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;" class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p> </td>
-    </table>
-    </td>
-    <td class="project">  
-    <table class="projectinfo" style="height:80%">
-            <tr> <th class="tableheadings" style="padding-top: 10%;"> This Website </th> </tr>
-            <tr> <th class="tableheadings" style="color: grey;"> HTML/CSS </th> </tr>
-            <tr> <th><img style="padding-top: 10px; padding-bottom: 10px; width: 200px; height:150px;"src="hangman2.png"> </th></tr>
-            <tr> <td style="height: 50%;"> A website for you to get to know me better! My first website, and exploration into front-end development. It's been fun. </td> </tr>
-            <td> <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;"class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p> </td>
-    </table>
-    </td>
-  </tr>
-</table>  
-        </div>
-        </div>
+<div class="mdl-grid table">
+    <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col projectinfo">
+        <p> Pubble </p>
+        <p> Javascript </p>
+        <img style="padding-top: 10px; padding-bottom: 10px; width: 130px; height:150px;"src="code.jpg">
+        <p>An app on the Pebble smartwatch that allows users to find the price of meals in restaurants near their current location.</p>
+        <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;" class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col projectinfo">
+        <p> Pubble </p>
+        <p> Javascript </p>
+        <img style="padding-top: 10px; padding-bottom: 10px; width: 130px; height:150px;"src="code.jpg">
+        <p>An app on the Pebble smartwatch that allows users to find the price of meals in restaurants near their current location.</p>
+        <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;" class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col projectinfo">
+        <p> Pubble </p>
+        <p> Javascript </p>
+        <img style="padding-top: 10px; padding-bottom: 10px; width: 130px; height:150px;"src="code.jpg">
+        <p>An app on the Pebble smartwatch that allows users to find the price of meals in restaurants near their current location.</p>
+        <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;" class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col projectinfo">
+        <p> Pubble </p>
+        <p> Javascript </p>
+        <img style="padding-top: 10px; padding-bottom: 10px; width: 130px; height:150px;"src="code.jpg">
+        <p>An app on the Pebble smartwatch that allows users to find the price of meals in restaurants near their current location.</p>
+        <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;" class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+</div>
         </div>
         
         

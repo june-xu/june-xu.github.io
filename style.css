@@ -2,10 +2,12 @@
     font-family: "nevis";
     src:url("fonts/nevis.ttf")
 }
+
 @font-face {
-    font-family: "Back to Black Demo";
-    src:url("fonts/Back to Black Demo.ttf")
+    font-family: "nevis";
+    src:url("fonts/nevis.ttf")
 }
+
 
 html,body {
     margin:0;
@@ -92,12 +94,6 @@ body {
 
 .nav-transparent { background-color:transparent;}
 
-@media screen and (max-width: 500px) {
-    .body {height: auto;}
-    .navMain ul li{
-        display: block;
-    }
-}
 
 
 .container {
@@ -127,13 +123,8 @@ body {
 }
 
 .table {
-    padding-left: 20px;
-    margin-left:auto; 
-    margin-right:auto;
-    table-layout: fixed;
-    border-spacing: 20px;
-    height: 500px;
-    width: 1300px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*svg:hover {
@@ -147,93 +138,21 @@ body {
     100% {padding-top: 4%; height: 60%;}
 }*/
 
-.logo {
-    width: 4%;
-    height: 1%;
-    padding-top: 2%;
-    top:20%;
-    padding-right: 500px;
-}
-.pic {
-    height: 60%;
-    width: 20%;
-}
-
-.smallogo {
-    margin: 10px 10px -9px 5px;
-}
-
-.row {
-    display: block;
-    padding-top: 0px;
-    padding-left: 50%;
-    
-}
-
-/* GLOBAL STYLES */
-.description {
-  color: black;
-  font-family: Open Sans;
-  padding-top: 10px;
-  width: 10%;
-  height: 10%;
-  justify-content: center;
-  display: inline-block;
-  font-size: 20px;
-  padding-bottom: 10px;
-  align-content: center;
-  float: left;
-}
-
-/* .. */
-.typewriter {
-  padding-left: 10px;
-  padding-right: 10px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .20em; /* Adjust as needed */
-  animation: typing 2s steps(40, end), blink-caret 1s 
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 10% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
-}
-
-.project {
-    box-sizing: border-box;
-    color: black;
-    background-color: orange;
-    font-family: monospace;
-}
 
 .projectinfo {
     box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
     background-color: white;
-    height: 80%;
+    background-color: white; 
+    padding: 2% 4%;
+    text-align: center;
+    font-family: monospace;
 }
 
 .projectinfo:hover{ position: relative; 
              top: -10px;} 
 
-tr {
-    font-size: 14px;
-}
-tr td {
-    padding-left: 20px;
-    padding-right: 10px;
-}
-
 .tableheadings {
+    font-family: monospace;
     height: 5%;
     padding-top: 2%;
 }
@@ -254,10 +173,6 @@ tr td {
     /* background: -webkit-linear-gradient(left, red, white, yellow); */
 }
 
-.landingpic {
-    height: 81%;
-    mix-blend-mode: multiply;
-}
 
 #rowofpics {
     padding-top: 50px;
@@ -275,24 +190,17 @@ tr td {
 }
 
 .name {
+    padding-top: 150px;
+    padding-bottom: 70px;
+    font-size: 200px;
     font-family: Back to Black Demo;
-    font-size: 300px;
-    width: 100%;
-    height: 0%;
     text-align: center;
     background-color: white;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
 }
 
 .intro {
-    color: black;
-    height: 50%;
     padding-top: 100px;
+    color: black;
     text-align: center;
     z-index: 1;
     font-family: nevis;
@@ -302,12 +210,8 @@ tr td {
 }
 .animatename {
     color: white;
-    position: absolute;
-    padding-top: 10px;
     -webkit-animation: color-change 2s infinite ease 1.5s, fadein 0.2s ease 1.5s; 
     -moz-animation: color-change 2s infinite ease 1s; fadein 0.5s; 
-    height: 100%;
-    width: 100%;
     
 }
 
@@ -319,11 +223,6 @@ tr td {
 }
 
 #arrow {
-    padding-top: 60px;
-    width: 50px;
-    height: 33px;
-    margin: auto;
-    display: block;
     animation: jump 2s infinite ease 1.5s, fadein 0.2s ease 1.5s; 
 }
 
@@ -413,11 +312,22 @@ tr td {
     
 }
 
-@media screen and (max-width: 587px) {
-    body{
-       min-width: 587px; /* suppose you want minimun width of 1000px */
-       width: auto !important;  /* Firefox will set width as auto */
-       width: 587px;             /* As IE ignores !important it will set width as 1000px; */
+
+
+@media screen and (max-width: 908px) {
+    .name {
+        font-size: 80px;
+        padding: 0;
     }
-    
+    .landingicons {
+        padding-top: 0px;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .table {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -1,11 +1,11 @@
 @font-face {
     font-family: "nevis";
-    src:url("fonts/nevis.ttf")
+    src:url("nevis.ttf")
 }
 
 @font-face {
-    font-family: "nevis";
-    src:url("fonts/nevis.ttf")
+    font-family: "Back to Black Demo";
+    src:url("Back to Black Demo.ttf")
 }
 
 
@@ -152,9 +152,9 @@ body {
              top: -10px;} 
 
 .tableheadings {
+    padding-top: 10px;
     font-family: monospace;
-    height: 5%;
-    padding-top: 2%;
+    font-size: 25px;
 }
 
 .footertext {
@@ -266,6 +266,14 @@ body {
 }
 
 
+.formatpicture{
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    width: 130px; 
+    height:150px;
+    
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -311,8 +319,6 @@ body {
     }
     
 }
-
-
 
 @media screen and (max-width: 908px) {
     .name {

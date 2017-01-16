@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Rubik" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,36 +23,45 @@
             <a href="#contact"><i style="padding-left: 20px;color: black;"class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a></div>
             <a href="#aboutme"> <div class="arrow"> <img src="arrow.jpg" id="arrow"> </div> </a>
     </div>
-    <div class="sectOneHalf" id="aboutme">
-        <div style="display:inline-block; width: 30%;"> <p style="color: white;"class="headings"> ABOUT </p> 
-        <hr style="width: 70px; float:left; margin-left: 131.5px; height: 5px; background-color: white; border: none;"></div>
-        <p class="words" style="color: white;"> 
+    <div class="sectOneHalf mdl-grid" id="aboutme">
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col">
+                <p style="color: white;"class="headingswhite"> ABOUT</p>  
+        </div>
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--9-col">
+            <p class="words" style="color: white;"> 
             Hello there! I'm JUNE.
-        </p>
-        <p class="words1" style="color: white;"> I'm a 18 year old student living in Waterloo, ON. I'm in love with creating new things, and making sure they're beautiful. I also love learning new things - like the type of things that make you super excited and jittery in your chair. </p>
+            </p>
+            <p class="words1" style="color: white;"> I'm a 18 year old student living in Waterloo, ON. I'm in love with creating new things, and making sure they're beautiful. I also love learning new things - like the type of things that make you super excited and jittery in your chair. </p>
+        </div>    
+    </div>
+<div class="sectThree mdl-grid" id="education">
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col"> 
+            <p style="color: orange;" class="headingsorange">SCHOOL</p> 
         </div>
-<div class="sectThree" id="education">
-        <div style="display:inline-block; width: 30%;"> <p style="color: orange;"class="headings">EDUCATION</p> 
-            <hr style="width: 70px; float:left; margin-left: 131.5px; height: 5px; background-color: orange; border: none;"> 
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--9-col">
+            <p class="words"> 
+            Bachelors of Computer Science
+            </p>
+            <p class="words1"> University of Waterloo 2021</p>
         </div>
-        <p class="words"> Bachelors of Computer Science, COOP </p>
-        <p class="words1"> University of Waterloo 2021</p>
+</div>
+    <div class="sectTwo mdl-grid" id="projects">
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col"> 
+            <p style="color: white;"class="headingswhite"> WORKS</p> 
         </div>
-    <div class="sect sectTwo" id="projects">
-        <div style="display:inline-block; width: 30%;"> <p style="color: white;"class="headings"> PROJECTS </p>
-        <hr style="width: 70px; float:left; margin-left: 131.5px; height: 5px; background-color: white; border: none;">
-            </div>
-        <table class="table"> 
+<div class="mdl-cell mdl-cell--stretch mdl-cell--12-col"> 
+<div style="overflow-x:auto"> 
+<table class="table"> 
   <tr>
-    <td class="project"> 
-    <table class="projectinfo" style="height: 80%;">
+        <td class="project"> 
+        <table class="projectinfo" style="height: 80%;">
         <tr> <th class="tableheadings" style="padding-top: 10%;"> Pubble</th> </tr>
-        <tr> <th class="tableheadings" style="color: grey;"> HTML/CSS, Javascript  </th> </tr>
+        <tr> <th class="tableheadings" style="color: grey;"> Javascript  </th> </tr>
         <tr> <th><img style="padding-top: 10px; padding-bottom: 10px; width: 200px; height:150px;"src="code.jpg"> </th></tr>
         <tr> <td style="height: 50%;"> An app on the Pebble smartwatch that allows users to find the price of meals in restaurants near their current location.  </td></tr> 
         <td> <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;" class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p>  </td> 
-    </table>
-    </td>
+        </table>
+        </td>
     <td class="project">
     <table class="projectinfo" style="height:80%">
             <tr> <th class="tableheadings" style="padding-top: 10%;"> Bliss </th> </tr>
@@ -78,17 +88,27 @@
             <tr> <td style="height: 50%;"> A website for you to get to know me better! My first website, and exploration into front-end development. It's been fun. </td> </tr>
             <td> <p style="text-align:center;"> <a href="https://github.com/june-xu"> <i style="color:black;"class="fa fa-github fa-3x" aria-hidden="true"></i> </a> </p> </td>
     </table>
+    </td>
   </tr>
-</table>
-    </div>
-    <div class="sectFour" id="contact">
-        <div style="display:inline-block; width: 30%;"> <p class="headings">CONTACT</p> 
-            <hr style="width: 70px; float:left; margin-left: 131.5px; height: 5px; background-color: orange; border: none;"> 
+</table>  
         </div>
-            <p class="words"> Get in touch!  </p>
-            <p class="words1"> Find me on <a style="color: grey; text-decoration: None;"href="https://github.com/june-xu">Github</a> and <a style="color: grey; text-decoration: None;"href="https://ca.linkedin.com/in/junexu"> Linkedin. </a> Want to say hello or just want to share a bad pun? Shoot me an <a style="color: deeppink; text-decoration: None;"href="mailto:junehqxu@gmail.com?"> email!</a>
+        </div>
+        </div>
+        
+        
+    <div class="sectFour mdl-grid" id="contact">
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--3-col"> 
+            <p style="color: orange;" class="headingsorange">CONTACT</p> 
+        </div>
+        <div class="mdl-cell mdl-cell--stretch mdl-cell--9-col">
+            <p class="words"> Get in touch! </p>
+            <p class="words1"> Find me on 
+            <a style="color: grey; text-decoration: None;"href="https://github.com/june-xu">Github</a> and <a style="color: grey; text-decoration: None;"href="https://ca.linkedin.com/in/junexu"> Linkedin. </a> Want to say hello or just want to share a bad pun? Shoot me an <a style="color: deeppink; text-decoration: None;"href="mailto:junehqxu@gmail.com?"> email!</a>
            <a style="color: grey; text-decoration: None;" href="https://drive.google.com/file/d/0B-rClKxfcNh3Y1hyRzU5b2kxTnc/view?usp=sharing"> Click here for a downloadable version of my resume. </a> </p>
         </div>
+    </div>
+   
+        
     <div class="subsection">
         <hr style="width: 100%; height: 1px;background-color: lightgrey; border: none;">   
         <div style="">

@@ -1,7 +1,7 @@
 # HEY THERE! I'm June. 
-This is my personal website. 
+Below is a link to my personal website. 
 
 ```
-Visit https://june-xu.github.io/
+https://june-xu.github.io/
 
 ```

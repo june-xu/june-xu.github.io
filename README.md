@@ -2,6 +2,6 @@
 Below is a link to my personal website. 
 
 ```
-https://june-xu.github.io/
+junexu.me
 
 ```

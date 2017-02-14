@@ -31,7 +31,7 @@ body {
 .textheadingwhite {
   color: white; }
 
-.textbody {
+.textbody, .textbodywhite {
   padding-left: 70px;
   line-height: 1.5em;
   font-family: Open Sans, sans-serif;

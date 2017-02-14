@@ -58,7 +58,7 @@ $basic-padding: 5% 0%;
 }
 
 .textbodywhite {
-    @extend .textbodywhite;
+    @extend .textbody;
     color: white;
 }
 

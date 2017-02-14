@@ -22,11 +22,14 @@ body {
   padding: 5% 0%;
   background-color: white; }
 
-.textheading {
+.textheading, .textheadingwhite {
   padding-left: 70px;
   font-size: 30px;
   line-height: 1em;
   font-family: nevis, sans-serif; }
+
+.textheadingwhite {
+  color: white; }
 
 .textbody {
   padding-left: 70px;
@@ -35,6 +38,9 @@ body {
   letter-spacing: 1px;
   width: 60%; }
 
+.textbodywhite {
+  color: white; }
+
 .title, .whitetitle, .whitetitle::after, .orangetitle, .orangetitle::after {
   font-size: 30px;
   font-family: nevis, sans-serif;
@@ -42,10 +48,10 @@ body {
   padding-left: 70px; }
 
 .whitetitle, .whitetitle::after {
-  background-color: white; }
+  color: white; }
 
 .orangetitle, .orangetitle::after {
-  background-color: orange; }
+  color: orange; }
 
 .projectinfo {
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
@@ -112,6 +118,10 @@ body {
   height: 10%;
   text-align: center; }
 
+.singleicon {
+  padding-left: 20px;
+  color: black; }
+
 .title, .whitetitle, .whitetitle::after, .orangetitle, .orangetitle::after {
   content: "";
   display: block;
@@ -173,7 +183,7 @@ body {
     display: flex;
     justify-content: center; }
 
-  .textheading, textbody {
+  .textheading, .textheadingwhite, textbody {
     text-align: left; }
 
   .name {

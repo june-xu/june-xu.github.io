@@ -76,6 +76,10 @@ body {
   height: 751px;
   background-color: white; }
 
+.downarrow {
+  justify-content: center;
+  display: flex; }
+
 .name {
   padding-top: 150px;
   padding-bottom: 70px;

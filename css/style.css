@@ -85,17 +85,19 @@
     transform: skewX(15deg);
     z-index: -1;
 }
-.button:hover {
+.button:hover .link {
     color: #5bcaff;
     cursor: pointer;
 }
 .link:hover{
     color: #5bcaff;
+    cursor: pointer;
 }
 .button:hover:after {
-  color: #5bcaff;
-  left: -10%;
-  width: 120%;
+    color: #5bcaff;
+    left: -10%;
+    width: 120%;
+    cursor: pointer;
 }
 
 /* ============================================================================================== 

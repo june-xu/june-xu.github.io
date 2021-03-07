@@ -1,41 +1,31 @@
-<!DOCTYPE html>
-<html>
-   <head lang="en">
-      <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway|Handlee" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title> 6 mo. </title>
-      <link rel="stylesheet" href="css/style.css"/>
-      <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-   </head>
-   <body>
-    <div class="stars">
-        <div class="name">june xu</div>
-        <div class="container">
-            <div class="button">
-                <a href="JuneXuResume.pdf" target="_blank" class="link">
-                resume
-                </a>
-            </div>
-            <div class="button">
-                <a href="https://github.com/june-xu" target="_blank" class="link">
-                github
-                </a>
-            </div>
-            <div class="button">
-                <a href="https://www.linkedin.com/in/junexu/" target="_blank" class="link">
-                linkedin
-                </a>
-            </div>
-            <div class="button">
-                 <a href="mailto:junehqxu@gmail.com?" class="link">
-                contact
-                </a>
-            </div>
-        </div>
-        <div class="twinkling"></div>
-        <div class="clouds"></div>
-    </div>
-   </body>
-</html>
+---
+layout: default
+---
+
+<section>
+
+	{% for post in site.posts %}
+		{% unless post.next %}
+			<h3 class="code">{{ post.date | date: '%Y' }}</h3>
+		{% else %}
+			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+			{% if year != nyear %}
+				<h3 class="code">{{ post.date | date: '%Y' }}</h3>
+			{% endif %}
+		{% endunless %}
+
+		<ul>
+			<li>
+				<div class="post-date code">
+					<span>{{ post.date | date: "%b %d" }}</span>
+				</div>
+				<div class="title">
+					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+				</div>
+			</li>
+		</ul>
+
+	{% endfor %}
+
+</section>

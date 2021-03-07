@@ -26,8 +26,8 @@ description: June's thoughts, ramblings and other musings.
 logo_url: https://avatars.githubusercontent.com/u/17295225?v=4
 
 # Site-specific settings
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://june-xu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://june-xu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+base_url: /blog 
 twitter_username: juneaftermay
 github_username:  june-xu
 
@@ -40,12 +40,28 @@ sass:
     style:          :compressed
 
 # Build settings
-theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-remote-theme
 
 remote_theme: heiswayi/the-plain
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

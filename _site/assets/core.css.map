@@ -3,8 +3,8 @@
 	"file": "core.css",
 	"sources": [
 		"core.scss",
-		"../../../../private/var/folders/25/vfm_g0l903xg4yh4f0p7ypd00000gn/T/jekyll-remote-theme-20210307-6527-1tpadyw/_sass/main.scss",
-		"../../../../private/var/folders/25/vfm_g0l903xg4yh4f0p7ypd00000gn/T/jekyll-remote-theme-20210307-6527-1tpadyw/_sass/syntax.scss"
+		"_sass/main.scss",
+		"_sass/syntax.scss"
 	],
 	"sourcesContent": [
 		"@import 'main';\n@import 'syntax';\n",

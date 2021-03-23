@@ -26,8 +26,7 @@ description: June's thoughts, ramblings and other musings.
 logo_url: https://avatars.githubusercontent.com/u/17295225?v=4
 
 # Site-specific settings
-url: "//june-xu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-base_url: /blog 
+url: "https://june-xu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: juneaftermay
 github_username:  june-xu
 
